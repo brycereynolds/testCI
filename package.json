@@ -1,0 +1,26 @@
+{
+  "name": "testci",
+  "version": "1.0.0",
+  "description": "Basic application for testing different CI tools.",
+  "main": "server.js",
+  "dependencies": {},
+  "devDependencies": {
+    "should": "^6.0.1",
+    "mocha": "^2.2.4",
+    "supertest": "^0.15.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec -b --recursive --full-trace",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brycereynolds/testCI.git"
+  },
+  "author": "Bryce Reynolds brycereynoldsdesign@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brycereynolds/testCI/issues"
+  },
+  "homepage": "https://github.com/brycereynolds/testCI#readme"
+}
