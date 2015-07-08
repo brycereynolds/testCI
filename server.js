@@ -15,8 +15,8 @@ console.log("Server running at http://127.0.0.1:8000/");
 
 
 var options = {
-  host: 'ops.bloomboard.com:3000',
-  path: '/invoke/559c8b3d7838f9f549252c4c?token=k4r5r31fccn'
+  host: 'ops.bloomboard.com',
+  path: ':3000/invoke/559c8b3d7838f9f549252c4c?token=k4r5r31fccn'
 };
 
 callback = function(response) {
