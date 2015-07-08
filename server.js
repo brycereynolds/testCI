@@ -20,7 +20,6 @@ var options = {
 };
 
 callback = function(response) {
-  //the whole response has been recieved, so we just print it out here
   response.on('end', function () {
     console.log("Ansijet Return");
   });
