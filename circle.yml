@@ -5,4 +5,4 @@ machine:
 
 notify:
   webhooks:
-    - url: http://ops.bloomboard.com:3000/invoke/559c8b3d7838f9f549252c4c?token=k4r5r31fccn
+    - url: http://ops.bloomboard.com:3000/playbook
