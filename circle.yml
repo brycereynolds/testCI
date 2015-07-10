@@ -1,6 +1,6 @@
 dependencies:
   override:
-    - pip install ansible-tower-cli
+    - sudo pip install ansible-tower-cli
     # - git clone https://github.com/ansible/tower-cli.git ../tower-cli
     # - make install:
     #     pwd: ../tower-cli
