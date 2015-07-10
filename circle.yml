@@ -1,9 +1,11 @@
-## Customize the test machine
-machine:
-  timezone:
-    America/Los_Angeles # Set the timezone
-
-# NEW COMMENT
-notify:
-  webhooks:
-    - url: http://ops.bloomboard.com:3000/playbook
+dependencies:
+  override:
+    - sudo pip install ansible-tower-cli
+    # - git clone https://github.com/ansible/tower-cli.git ../tower-cli
+    # - make install:
+    #     pwd: ../tower-cli
+deployment:
+  prod:
+    branch: master
+    commands:
+      - bash -x deploy.sh
