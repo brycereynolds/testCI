@@ -3,6 +3,7 @@ machine:
     - docker
 dependencies:
   override:
+    - docker info
     - sudo pip install ansible-tower-cli
 deployment:
   prod:
