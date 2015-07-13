@@ -1,6 +1,6 @@
 {
   "name": "testci",
-  "version": "0.0.1",
+  "version": "0.0.8",
   "description": "Basic application for testing different CI tools.",
   "main": "server.js",
   "dependencies": {},
