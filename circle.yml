@@ -1,3 +1,6 @@
+machine:
+  services:
+    - docker
 dependencies:
   override:
     - sudo pip install ansible-tower-cli
