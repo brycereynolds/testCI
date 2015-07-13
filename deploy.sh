@@ -6,13 +6,10 @@ VERSION=`grep '"version"' package.json | grep -o "[0-9]\.[0-9]\.[0-9]"`
 git tag $VERSION
 git push --tags
 
-docker build -t $DOCKER_HUB_REPO .
+docker build -t $DOCKER_REPO:$VERSION .
 docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-docker push $DOCKER_HUB_REPO:$VERSION
+docker push $DOCKER_REPO:$VERSION
 
-
-docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-docker push $DOCKER_HUB_REPO:$VERSION
 
 # Tell ansible to fire off a job
 tower-cli config host $ANSIBLE_TOWER_SERVER
