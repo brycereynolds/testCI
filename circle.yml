@@ -5,4 +5,5 @@ deployment:
   prod:
     branch: master
     commands:
+      - cp Dockerfile.production Dockerfile
       - bash -x deploy.sh

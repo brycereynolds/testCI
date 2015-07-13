@@ -1,6 +1,6 @@
 {
   "name": "testci",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Basic application for testing different CI tools.",
   "main": "server.js",
   "dependencies": {},
@@ -11,7 +11,7 @@
   },
   "scripts": {
     "test": "mocha -R spec -b --recursive --full-trace",
-    "start": "node server.js"
+    "start": "node app/server.js"
   },
   "repository": {
     "type": "git",
